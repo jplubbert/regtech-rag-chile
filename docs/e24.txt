@@ -1,0 +1,415 @@
+OFICIO CIRCULAR N°1.381
+28 de agosto de 2025
+
+REF: Introduce ajustes técnicos al archivo E24 de la NCG N°487 respecto los campos 26, 28 y 34 del Registro 1 y agrega carátulas de cuadratura para registros 1 y 2
+
+A todas las entidades bancarias, sociedades de apoyo al giro, empresas emisoras de tarjetas de pago y cooperativas de ahorro y crédito fiscalizadas por esta Comisión
+
+Esta Comisión, en uso de las facultades legales, en especial lo dispuesto en los numerales 1 y 18 del artículo 5 del Decreto Ley N°3.538, de 1980; el Capítulo 18-3 de la Recopilación Actualizada de Normas de bancos y de la Resolución N°4.479 de 15 de mayo de 2024, procede a realizar ajustes técnicos.
+
+La Norma de Carácter General N°487 (NCG 487) que, ordena reportar información desagregada asociada a los medios de pago definidos en el artículo N°1 de la Ley N°20.009, afectados por situaciones de extravío, hurto, robo o fraude, que hayan sido objeto de aviso o reclamo por parte de los titulares o usuarios, mediante el Archivo Normativo E24, fue modificada por la Norma de Carácter General N°539 (NCG 539), reemplazando el Archivo Normativo señalado.
+
+Que para el correcto reporte de los datos que contiene el Archivo E24, se deben realizar ajustes de carácter formal y técnico que no corresponden a una modificación normativa, sino que a la descripción de los campos 26, 28 y 34 y las cuadraturas en cada registro.
+
+En específico, se realizan los siguientes ajustes al Registro 1 del Archivo Normativo E24:
+
+a) Se ajustan las instrucciones de los campos 26 y 28 reemplazando la frase "con espacios" por "con 19000101".
+b) En las instrucciones del Campo 30 se reemplaza donde dice "Campo 02…" por "Código 02…".
+c) En el último párrafo de las instrucciones del Campo 34 se reemplaza la frase "Si no se presentaron acciones judiciales (Códigos 02 y 03 del Campo 30)..." por "Si no se presentaron acciones judiciales y el plazo está vencido (Código 03 del Campo 30) …".
+
+Estas modificaciones deberán ser consideradas para el envío de la información, que debe ser reportada hasta el 30 de septiembre de 2025.
+
+Como consecuencia de los cambios señalados, se reemplazan las respectivas hojas del Archivo E24, y se actualiza la NCG N°487.
+
+PATRICIO EDUARDO VALENZUELA CONCHA
+DIRECTOR GENERAL DE REGULACION DE CONDUCTA DE MERCADO
+COMISIÓN PARA EL MERCADO FINANCIERO
+
+
+ANEXO: AJUSTES DESTACADOS ARCHIVO NORMATIVO E24 DE LA NCG N°487
+
+CÓDIGO: E 24
+NOMBRE: Información sobre uso de tarjetas de pago y transacciones electrónicas, relacionado con extravío, robo, hurto o fraude (artículo 11 de la Ley N°20.009)
+SISTEMA: Instituciones
+PERIODICIDAD: Mensual
+PLAZO: 15 primeros días del mes siguiente al período a reportar
+
+Mediante este archivo se reportará información sobre el régimen de limitación de responsabilidad para los titulares y usuarios afectados por casos previstos en la Ley N°20.009.
+
+La institución deberá reportar información desagregada asociada a los medios de pago definidos en el artículo N°1 de la Ley N°20.009- afectados por situaciones de extravío, hurto, robo o fraude que hayan sido objeto de aviso o reclamo por parte de los titulares o usuarios conforme a las disposiciones del artículo 2 de la Ley N°20.009-, durante el periodo al que hace referencia la información, como todos aquellos informados en períodos anteriores que no se han terminado de tramitar. Los umbrales para la restitución de fondos y/o cancelación de cargos, se encuentran establecidos en el reglamento emitido por el Ministerio de Hacienda, suscrito además por el Ministerio de Economía, Fomento y Turismo, de acuerdo con lo establecido en el artículo 5 de la Ley N°20.009.
+
+Primer Registro
+1. Código de la institución ........................................................................... 9(10)
+2. Identificación del archivo ......................................................................... X(03)
+3. Período ...................................................................................................... P(06)
+4. Filler ........................................................................................................ X(284)
+Largo del registro 303 bytes
+
+1. CÓDIGO DE LA INSTITUCIÓN
+Corresponde al código que identifica a la institución, según la codificación dada por la Comisión para el Mercado Financiero.
+
+2. IDENTIFICACIÓN DEL ARCHIVO
+Corresponde a la identificación del archivo. Debe ser "E24".
+
+3. PERIODO
+Corresponde al período (AAAAMM) a que se refiere la información.
+
+
+REGISTROS SIGUIENTES
+
+Los registros siguientes contendrán distinto tipo de información, la que se identificará en el primer campo de cada uno de ellos con los siguientes códigos:
+
+Código Tipo de registro (contenido)
+1 Avisos objeto de reclamos asociados a operaciones impugnadas de acuerdo con la Ley N°20.009
+2 Avisos por extravío, robo o hurto sin operaciones impugnadas de acuerdo con la Ley N°20.009
+
+
+Registro 1 que contiene los avisos que han sido objeto de reclamos asociados a operaciones impugnadas de acuerdo con la Ley N°20.009.
+
+En este registro se informan todas las operaciones impugnadas, identificando el código del aviso de acuerdo con el artículo 2 de la Ley N°20.009 y la fecha en que fueron reclamadas de acuerdo con el artículo 4 del mismo texto legal, pudiendo corresponder varias operaciones impugnadas a un reclamo en particular.
+
+Se deben reportar, asimismo, todas las operaciones impugnadas incluso aquellas en que el usuario no haya acompañado la denuncia que se requiere para la cancelación de los cargos o la restitución de los fondos en virtud del inciso cuarto del artículo 4 de la Ley N°20.009.
+
+No deberán informarse los avisos/reclamos que hayan sido reportados anteriormente como terminados de acuerdo con lo señalado al efecto en las explicaciones del Campo N°32.
+
+Transitoriedad legal:
+Los avisos/reclamos verificados con anterioridad al 30 de mayo de 2024 y que no hayan sido informados como terminados en el período anterior al que se informa, se deberán completar de acuerdo a lo siguiente: los Campos N°s 6, 8 y 24, con el código 19000101 y Campos N°s 7, 14, 17, 18, 19, 20, 21, 22, 23, 25, 27, 29, 30, 31, 32, 33 y 34 con ceros. El resto de los campos se completará con la información que corresponda.
+
+Los avisos y reclamos verificados con posterioridad al 30 de mayo de 2024 y que no hayan sido informados como terminados en el período anterior al que se informa, podrán, solo para el caso de no poder contar con la información solicitada, completar los campos N°s 6, 7, 8, 14, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27, 29, 30, 31, 32, 33 y 34 con cincos. El resto de los campos se completará con la información que corresponda.
+
+
+1. Tipo de registro ...................................................................................................... 9(01)
+2. RUT ………………………………………………………………………………………………..R(09)VX(01)
+3. Código del aviso ..................................................................................................... X(30)
+4. Fecha del aviso ........................................................................................................ F(08)
+5. Fecha de Bloqueo del Producto .............................................................................. F(08)
+6. Fecha del Reclamo .................................................................................................. F(08)
+7. Estado de la Denuncia ............................................................................................ 9(02)
+8. Fecha de entrega del respaldo de la denuncia ........................................................ F(08)
+9. Número de identificación de la operación .............................................................. X(30)
+10. Fecha de la operación ............................................................................................. F(08)
+11. Moneda ……… ......................................................................................................... 9(02)
+12. Producto afectado ................................................................................................... 9(02)
+13. Operación objeto de impugnación .......................................................................... 9(02)
+14. Presencialidad ......................................................................................................... 9(02)
+15. Monto de la operación impugnada ......................................................................... 9(14)
+16. Monto total de las operaciones impugnadas .......................................................... 9(14)
+17. Solicitudes de Suspensión ...................................................................................... 9(02)
+18. Competencia del Juzgado de Policía Local (JPL) ................................................... 9(06)
+19. Número del Tribunal ............................................................................................... 9(02)
+20. Rol de ingreso al Tribunal ....................................................................................... X(30)
+21. Monto de la solicitud de suspensión ....................................................................... 9(14)
+22. Causal(es) invocada(s) en la solicitud de suspensión ............................................. 9(09)
+23. Resultado solicitud de suspensión .......................................................................... 9(02)
+24. Fecha de la notificación de la resolución que acoge o rechaza suspensión ............ F(08)
+25. Causal(es) que fundamenta(n) suspensión por el JPL .......................................... 9(09)
+26. Fecha de la primera restitución de fondos o cancelación de cargos ....................... F(08)
+27. Monto de la primera restitución de fondos o cancelación de cargos ...................... 9(14)
+28. Fecha de la segunda restitución de fondos o cancelación de cargos ...................... F(08)
+29. Monto de la segunda restitución de fondos o cancelación de cargo ....................... 9(14)
+30. Acciones judiciales en Juzgado de Policía Local ..................................................... 9(02)
+31. Monto de Acciones judiciales en JPL ...................................................................... 9(14)
+32. Estado acciones judiciales ....................................................................................... 9(02)
+33. Resultado Sentencia firme y ejecutoriada ............................................................... 9(02)
+34. Fecha restitución o cancelación por no acreditar judicialmente la existencia de dolo o culpa grave .................................................................................................... F(08)
+Largo del registro………………………………………………………………………….............…303 bytes
+
+
+Definición de términos
+
+1. TIPO DE REGISTRO
+Corresponde al código que identifica el tipo de registro. Debe ser "1".
+
+2. RUT
+Corresponde al número de RUT del usuario afectado.
+
+3. CÓDIGO DEL AVISO
+Corresponde a la identificación unívoca dada por la institución que consiste en un número, código de recepción o identificador de seguimiento del aviso de uso fraudulento, que debe ser entregado al usuario por parte de la institución que informa, según lo dispuesto en el artículo 2° de la Ley N°20.009. Cabe señalar, que por usuario (RUT) puede existir más de un aviso durante el periodo a informar.
+
+4. FECHA DEL AVISO
+Corresponde a la fecha (AAAAMMDD) que indica el día que el usuario afectado efectuó el aviso identificado en el Campo 3.
+
+5. FECHA DE BLOQUEO DEL PRODUCTO
+Corresponde a la fecha (AAAAMMDD) en que la institución emisora procedió al bloqueo del producto, según lo establecido en el inciso segundo del artículo 2 de la Ley N°20.009.
+
+6. FECHA DEL RECLAMO
+Corresponde a la fecha (AAAAMMDD) que el usuario afectado impugnó las operaciones que desconoce y cumplió con los requisitos dispuesto para ello (ingreso de declaración jurada, cuando corresponda, a través de los canales que está obligado a disponer para ello el emisor).
+
+En caso que no se haya presentado el reclamo que contiene las impugnaciones de las operaciones, y el plazo para realizar el reclamo se encuentra vencido (en virtud de lo dispuesto en el inciso primero del artículo 4 de la Ley N°20.009) se debe informar con ceros este Campo, y los Campos siguientes, con excepción de los Campos n°9 al 16 que deben completarse con la información que corresponda. Sin perjuicio de lo anterior, si el emisor ha optado por efectuar las cancelaciones o restituciones impugnadas aun sin que se haya acompañado el respaldo de la denuncia, deberán informarse los campos n°26 a 29 según corresponda.
+
+Si no se ha presentado el reclamo que contiene las impugnaciones de las operaciones, y el plazo para realizar el reclamo no se encuentra vencido, en virtud de lo dispuesto en el artículo 4 de la Ley N°20.009, se debe completar con nueves este y todos los campos siguientes (excepto Campo N°20 que debe completarse con espacios al ser alfanumérico) y se deberá volver a informar en el período siguiente.
+
+Si el emisor procedió a cancelar los cargos o restituir los fondos con el solo aviso del usuario, se debe llenar con ceros este Campo y los Campos siguientes con excepción de los Campos n°9 al 16 y el 26° al 29° que deben completarse con la información correspondiente y no se deberá volver a informar esta operación en el período siguiente.
+
+7. ESTADO DE LA DENUNCIA
+Se debe informar si el usuario ha presentado el respaldo de haber realizado la denuncia de acuerdo al inciso cuarto del artículo 4 de la Ley N°20.009, o si se encuentra pendiente o vencido el plazo para hacerlo de acuerdo a la siguiente codificación:
+
+Estado de la denuncia | Código
+Denuncia presentada | 01
+No se ha presentado denuncia y el plazo está pendiente | 02
+No se ha presentado denuncia y el plazo está vencido | 03
+
+Se debe informar con el Código 01 cuando la denuncia fue presentada dentro o fuera de plazo, completando los siguientes campos con la información que corresponda.
+
+En caso de seleccionar la opción 02, es decir, que no se presentó denuncia y el plazo está pendiente, se deberá informar llenando con nueves los campos siguientes (excepto Campo N°20 que debe completarse con espacios al ser alfanumérico) y se deberá volver a informar en el período siguiente.
+
+En caso de seleccionar la opción 03, es decir, que no se presentó denuncia y el plazo está vencido, se debe informar con ceros los campos siguientes, excepto los campos n°9 al 16, los que deben completarse con la información que corresponda. Por otro lado, si habiendo seleccionado esta alternativa, el emisor procedió a cancelar los cargos o restituir los fondos se debe completar los siguientes campos con ceros, excepto los campos N°9 a 16 y N°26 al 29 que deberán completarse según corresponda. Por otro lado, si habiendo seleccionado esta alternativa, el emisor da curso al reclamo, deberá completarse los siguientes campos con la correspondiente información.
+
+8. FECHA DE ENTREGA DEL RESPALDO DE LA DENUNCIA
+Corresponde a la fecha (AAAAMMDD) que indica el día que el usuario afectado presentó al emisor el respaldo de haber realizado la denuncia requerida para la cancelación de cargos o restitución de fondos, en virtud del inciso cuarto del artículo 4 de la Ley N°20.009.
+
+Si en el Campo N°7 se ha seleccionado el Código 02, es decir, no se ha presentado el respaldo de la denuncia, pero el plazo está pendiente, debe informarse este campo y los siguientes llenando con nueves (excepto Campo N°20 que debe completarse con espacios al ser alfanumérico) y se deberá volver a informar en el período siguiente.
+
+Si en el Campo N°7 se ha seleccionado el Código 03, es decir, no se presentó denuncia y el plazo está vencido, se deberán informar este y todos los campos siguientes con ceros si no se dio curso al reclamo, y no se deberá volver a informar en el período siguiente, excepto los campos 9 al 16, si se dio curso al reclamo, deberá completarse todos los campos con la información correspondiente.
+
+Si el emisor al recibir el respaldo del usuario de haber realizado la denuncia, dentro o fuera de plazo, procede a cancelar los cargos o restituir los fondos, se deberá completar este campo con la fecha de entrega, Campos n°9 al 16 y el Campo n°26 al 29 con la información que corresponda, y los demás campos con ceros.
+
+Si el emisor procedió a cancelar los cargos o restituir los fondos sin mediar presentación por parte del usuario del respaldo de haber realizado la denuncia (con el aviso oportuno del usuario o el reclamo), se debe llenar los siguientes campos con ceros, excepto los campos 9 al 16, y los campos 26 al 29, que deben completarse con la información correspondiente.
+
+9. NÚMERO DE IDENTIFICACIÓN DE LA OPERACIÓN
+Corresponde al código interno de identificación asignado en forma única por la institución a la operación que el usuario no reconoce. En caso que el mismo aviso o reclamo reportado involucre más de una operación, se debe registrar cada situación informada repitiendo los campos previos. Si el aviso además incluye robo, hurto o extravío de productos sin operaciones impugnadas, tales eventos se deberán registrar en el registro "2".
+
+10. FECHA DE LA OPERACIÓN
+Corresponde a la fecha (AAAAMMDD) de la operación impugnada.
+
+11. MONEDA
+Corresponde a la moneda de la operación impugnada de acuerdo a la siguiente codificación:
+
+Moneda | Código
+Peso Chileno | 01
+Otra Moneda | 02
+
+12. PRODUCTO AFECTADO
+Corresponde al tipo de producto afectado en la operación reportada, según la siguiente tabla:
+
+Situación Reportada | Código
+Tarjeta de crédito | 01
+Tarjeta de pago con provisión de fondos | 02
+Cuenta corriente | 03
+Cuenta vista | 04
+Línea de crédito | 05
+Cuenta de Ahorro | 06
+Otro | 97
+
+13. OPERACIÓN OBJETO DE IMPUGNACIÓN
+Corresponde al tipo de operación que se impugna o no se reconoce, según tabla siguiente.
+
+Operación Objeto de Aviso | Código
+Cargo u operación no reconocida | 01
+Giro no reconocido | 02
+Transferencia electrónica no reconocida | 03
+Giro no reconocido efectuado en ATM | 04
+Giros en avance en efectivo | 05
+Otros | 97
+
+Los Códigos 04 y 05 de este Campo, se refieren a aquellas operaciones sujetas a un plazo de cancelación o restitución especial del artículo 5 de la Ley N°20.009.
+Por su parte, el Código 02 no incluye los Giros en ATM, los cuales se informan en el Código 04.
+
+14. PRESENCIALIDAD
+En caso de operaciones con tarjetas, indique si la transacción impugnada fue realizada de modo presencial o no presencial.
+
+Presencialidad | Código
+Presencial | 01
+No presencial | 02
+
+Se debe informar con el código 01 aquellos casos en que tanto el titular o usuario como la tarjeta estén físicamente presentes al momento de la operación, esto es que interactúe de manera física, insertando, deslizando o acercando la tarjeta en un POS (punto de venta o sistema que haga las veces) o cajero automático, y el código 02 en caso que no estén físicamente presentes.
+
+15. MONTO DE LA OPERACIÓN IMPUGNADA
+Corresponde al monto de la operación impugnada en pesos chilenos. Si la operación impugnada es en otra moneda distinta del peso chileno, el tipo de cambio a considerar para completar la información será la de la fecha de la operación impugnada, sin perjuicio que la devolución es íntegra.
+
+16. MONTO TOTAL DE LAS OPERACIONES IMPUGNADAS
+Corresponde al monto total de las operaciones impugnadas. En el caso que el mismo aviso o reclamo reportado involucre más de una operación, se debe repetir este valor en cada una de las operaciones individualizadas.
+
+17. SOLICITUDES DE SUSPENSIÓN
+Se debe informar si la entidad reportante presentó ante el Juez de Policía Local (JPL) una solicitud para suspender la restitución de fondos o cancelación de cargos del reclamo que informa de acuerdo con los siguientes códigos:
+
+Solicitudes de Suspensión presentadas | Código
+Presentó solicitud de suspensión | 01
+No presentó solicitud de suspensión y el plazo está pendiente | 02
+No presentó solicitud de suspensión y el plazo está vencido | 03
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+18. COMPETENCIA DEL JUZGADO DE POLICÍA LOCAL (JPL)
+Debe completar con el código de la comuna que corresponda al JPL, de acuerdo a la Tabla N°65 del "Manual de Sistema de Información de Bancos" publicado en www.cmfchile.cl
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar llenando con nueves.
+
+Si informó con el Código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros, excepto que el emisor haya presentado demanda contra el usuario, debiendo llenarse este campo, ya que las acciones judiciales se reportan en el campo 30 y siguientes.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+19. NÚMERO DEL TRIBUNAL
+Ingresar el número de tribunal. Si existe un solo JPL, debe completar con nueves.
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar con nueves.
+
+Si informó con el Código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros, excepto que el emisor haya presentado demanda contra el usuario, debiendo llenarse este campo con el número de tribunal que corresponda.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+20. ROL DE INGRESO A TRIBUNALES
+Se debe individualizar la causa con el rol respectivo asignado a la solicitud de suspensión. Se deberá ingresar el rol completo, incluyendo todos los números y letras que lo componen y el año.
+
+En caso que el JPL aún no haya asignado el rol, deberá informar con "espacios" hasta llenar el largo de este campo.
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar con "espacios" hasta llenar el largo del campo, y si informó con el código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+Se debe igualmente llenar este campo en los casos que se hayan deducido acciones judiciales, las cuales se reportan en el campo 30 y siguientes.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+21. MONTO DE LA SOLICITUD DE SUSPENSIÓN
+Corresponde al monto en pesos chilenos de los fondos o cargos respecto de los cuales la entidad ha solicitado suspender su restitución o cancelación, respectivamente, al JPL correspondiente. Este monto total de la solicitud de suspensión se debe repetir en cada una de las operaciones individualizadas que forma parte del reclamo.
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar con nueves y si informó con el código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+22. CAUSAL(ES) INVOCADA(S) EN LA SOLICITUD DE SUSPENSIÓN
+Debe indicar, la o las circunstancias invocadas al JPL para solicitar la suspensión de la cancelación de los cargos y la restitución de los fondos.
+
+En caso en que se haya invocado más de una circunstancia al JPL, el código a reportar deberá contener dos o más elementos y se deberá rellenar con ceros a la izquierda hasta completar la longitud del campo (por ejemplo, si fueren las dos primeras circunstancias se reportará '000000012').
+
+Descripción de las circunstancias | Cód.
+Operación realizada exclusivamente entre cuentas que sean de su titularidad, contratadas con anterioridad. (Art. 5 ter letra a) Ley N°20.009) | 1
+Operación realizada exclusivamente entre cuentas de su titularidad y de su cónyuge o conviviente civil, o de parientes (Art. 5 ter letra b) Ley N°20.009) | 2
+Fondos transferidos hayan sido enviados a una o más cuentas registradas con al menos 48 horas antes del aviso, o se hubiere realizado transferencias a la o las cuentas de destino dos o más veces antes de las 48 previas al aviso. (Art. 5 ter letra c) Ley N°20.009) | 3
+Reconocimiento expreso de entrega de claves voluntariamente a terceros, a sabiendas de que podrán ser usadas para giros o transacciones. (Art. 5 ter letra d) Ley N°20.009) | 4
+Que el usuario tenga una o más sentencias firmes en el período de cinco años, en que se reconozca la existencia de dolo o culpa grave. (Art. 5 ter letra e) Ley N°20.009) | 5
+Indicios suficientes de coordinación maliciosa entre los usuarios para reclamar una o más operaciones en una misma oportunidad. (Art. 5 ter letra f) Ley N°20.009) | 6
+Indicios suficientes de que fue el mismo usuario quien realizó la operación reclamada en canales físicos previo a la solicitud de restitución y/o cancelación de cargos. (Art. 5 ter letra g) Ley N°20.009) | 7
+Si la operación desconocida hubiere sido realizada con autenticación reforzada, con al menos uno de los factores de autenticación de inherencia. (Art. 5 ter letra h) Ley N°20.009) | 8
+Otras | 9
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar con nueves y si informó con el código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+23. RESULTADO SOLICITUDES DE SUSPENSIÓN
+Se debe completar el pronunciamiento del Juez de Policía Local respecto de la solicitud de suspensión.
+
+Estado Solicitudes de Suspensión presentadas | Código
+En tramitación | 01
+Acogida | 02
+Rechazada | 03
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente, deberá informar con nueves y si informó con el código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+24. FECHA DE LA RESOLUCIÓN QUE ACOGE O RECHAZA LA SUSPENSIÓN
+Corresponde a la fecha (AAAAMMDD) que indica el día que la entidad fue notificada de la aceptación o el rechazo de la solicitud de suspensión por parte del JPL respectivo.
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente deberá informar con nueves y si informó con el código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+Si en el Campo 23 se informó con el Código 01 (en tramitación), se debe informar con nueves y volver a reportar en el próximo periodo.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+25. CAUSAL(ES) QUE FUNDAMENTA(N) SUSPENSIÓN POR EL JPL
+Debe indicar, la o las causales o circunstancias que tuvo en consideración el JPL para acoger la suspensión de la cancelación de los cargos y la restitución de los fondos.
+
+En caso en que se haya considerado más de una circunstancia por JPL, el código a reportar deberá contener dos o más elementos y se deberá rellenar con ceros a la izquierda hasta completar la longitud del campo (por ejemplo, si fueren las dos primeras circunstancias se reportará '0000000012').
+
+Descripción de causales | Cód.
+Operación realizada exclusivamente entre cuentas que sean de su titularidad, contratadas con anterioridad. (Art. 5 ter letra a) Ley N°20.009) | 1
+Operación realizada exclusivamente entre cuentas de su titularidad y de su cónyuge o conviviente civil, o de parientes (Art. 5 ter letra b) Ley N°20.009) | 2
+Fondos transferidos hayan sido enviados a una o más cuentas registradas con al menos 48 horas antes del aviso, o se hubiere realizado transferencias a la o las cuentas de destino dos o más veces antes de las 48 previas al aviso. (Art. 5 ter letra c) Ley N°20.009) | 3
+Reconocimiento expreso de entrega de claves voluntariamente a terceros, a sabiendas de que podrán ser usadas para giros o transacciones. (Art. 5 ter letra d) Ley N°20.009) | 4
+Que el usuario tenga una o más sentencias firmes en el período de cinco años, en que se reconozca la existencia de dolo o culpa grave. (Art. 5 ter letra e) Ley N°20.009) | 5
+Indicios suficientes de coordinación maliciosa entre los usuarios para reclamar una o más operaciones en una misma oportunidad. (Art. 5 ter letra f) Ley N°20.009) | 6
+Indicios suficientes de que fue el mismo usuario quien realizó la operación reclamada en canales físicos previo a la solicitud de restitución y/o cancelación de cargos. (Art. 5 ter letra g) Ley N°20.009) | 7
+Si la operación desconocida hubiere sido realizada con autenticación reforzada, con al menos uno de los factores de autenticación de inherencia. (Art. 5 ter letra h) Ley N°20.009) | 8
+Otras | 9
+No señala | 10
+
+Si en el Campo N°17 informó con el Código 02, es decir, que no presentó solicitud de suspensión y el plazo está pendiente deberá informar con nueves y si informó con el Código 03, que no presentó suspensión, pero el plazo está vencido, deberá informar con ceros.
+
+Si en el Campo N°23 informó con el Código 03, es decir, la suspensión fue rechazada, deberá informar con ceros.
+
+En los casos en que el emisor haya procedido a cancelar los cargos y/o restituir los montos impugnados deberá completarse este campo y los siguientes con ceros, con excepción de los Campos n°26 al n°29, los cuales deben completarse con la información que corresponda.
+
+26. FECHA DE LA PRIMERA RESTITUCIÓN DE FONDOS O CANCELACIÓN DE CARGOS
+Corresponde a la fecha (AAAAMMDD) en que la institución restituyó los fondos o canceló los cargos no reconocidos, involucrados en una o más operaciones impugnadas por montos de hasta el umbral establecido en el Reglamento respectivo de acuerdo con los términos que indica el primer inciso del artículo 5 de la Ley N°20.009.
+
+Luego, cuando el monto total de las operaciones impugnadas supere el umbral establecido en el Reglamento respectivo, la fecha a consignar debe corresponder a la de la primera parte restituida o cargos cancelados.
+
+Se completará con 19000101 cuando la restitución de fondos o cancelación de cargos aún no se ha realizado, ya sea porque el plazo está pendiente, o porque la suspensión está en tramitación.
+
+Si se restituyeron o cancelaron todos los montos en una instancia, se completará con la misma fecha en este campo y en el campo 28.
+
+En los casos en que el emisor haya obtenido la autorización judicial para suspender la cancelación de cargos y/o restitución de fondos, y haya interpuesto la respectiva demanda, en virtud del artículo 5 bis inciso cuarto de la Ley N°20.009, deberá llenarse este campo con ceros, y lo que se resuelva en la demanda deberá informarse desde los campos n°33 en adelante.
+
+27. MONTO DE LA PRIMERA RESTITUCIÓN DE FONDOS O CANCELACIÓN DE CARGOS
+Corresponde al monto de la primera restitución de fondos o cancelación de cargos que la entidad ha realizado. El valor UF a considerar para completar la información, será la de la fecha de la operación impugnada, sin perjuicio que la devolución es íntegra. Este monto de la primera restitución debe repetirse en cada una de las operaciones individualizadas que forma parte del reclamo.
+
+Si aún no se ha efectuado restitución de fondos o cancelación de cargos se debe informar con nueves.
+
+28. FECHA DE LA SEGUNDA RESTITUCIÓN DE FONDOS O CANCELACIÓN DE CARGOS
+Corresponde a la fecha (AAAAMMDD) en que la institución emisora restituyó los montos o canceló los cargos no reconocidos, involucrados en una o más operaciones impugnadas, superiores al umbral establecido en el Reglamento respectivo de acuerdo con los términos que indica el segundo inciso del artículo 5 de la Ley N°20.009. Se completará el campo con ceros cuando la primera restitución o cancelación no supere el umbral establecido en el Reglamento respectivo.
+
+Si la restitución de fondos o cancelación de cargos está pendiente, por motivos de plazos o porque la solicitud de suspensión está en tramitación, deberá completarse este campo con 19000101.
+
+Si el monto reclamado es superior al umbral establecido en el Reglamento, pero se cancelaron los cargos o restituyeron los fondos en una sola instancia, deberá completarse con la misma fecha de la primera restitución señalado en el Campo 26.
+
+29. MONTO DE LA SEGUNDA RESTITUCIÓN DE FONDOS O CANCELACIÓN DE CARGOS
+Corresponde al monto de la segunda restitución de fondos o cancelación de cargos que la entidad ha realizado. Este monto de la segunda restitución debe repetirse en cada una de las operaciones individualizadas que forma parte del reclamo.
+
+Se completará el campo con ceros si aún no ha efectuado la segunda restitución de fondos o cancelación de cargos, o si se realizó en una sola instancia.
+
+30. ACCIONES JUDICIALES EN JUZGADO DE POLICÍA LOCAL
+Se debe informar si se han presentado acciones judiciales en contra del cliente de acuerdo con el artículo 5 de la Ley N°20.009 en los juzgados de policía local, a las que ya se les haya asignado un rol por el tribunal correspondiente. En caso que aún no cuente con un rol asignado por el tribunal correspondiente, deberán informarse con el Código 02, es decir, como no presentadas y el plazo está pendiente. En este campo no se deben informar las suspensiones, las que se reportan desde el Campo 17 al 25, y se asimilan a acciones prejudiciales.
+
+Acciones judiciales contra el cliente | Código
+Se presentaron acciones judiciales contra el cliente | 01
+No se presentaron acciones judiciales contra el cliente y el plazo está pendiente | 02
+No se han presentaron acciones judiciales contra el cliente y el plazo esta vencido | 03
+
+31. MONTO DE ACCIONES JUDICIALES EN JPL
+Corresponde informar el monto demandado judicialmente.
+
+Si no se presentaron acciones judiciales (Códigos 02 y 03 del Campo 30) se debe informar con ceros.
+
+En el caso que haya más de una operación impugnada que haya sido objeto de acciones judiciales, se debe repetir este monto total demandado judicialmente en cada una de las operaciones individualizadas.
+
+32. ESTADO DE ACCIONES JUDICIALES
+Corresponde informar el estado de tramitación de las acciones judiciales presentadas en los respectivos juzgados de policía local, de acuerdo con la siguiente codificación:
+
+Estado tramitación acciones judiciales | Código
+En tramitación en JPL | 01
+Sentencia JPL en revisión por otro Tribunal | 02
+Sentencia ejecutoriada | 03
+Desistimiento de la acción | 04
+Abandono del procedimiento decretado por el tribunal | 05
+Avenimiento o conciliación | 06
+Otros | 97
+
+Se entenderá terminada la tramitación y, por ende, no deberá informarse en el próximo período, los reclamos (y todas las operaciones asociadas a dicho reclamo) que hayan sido informados bajo los Códigos, 03, 04, 05 y 06) y se haya efectuado la restitución o cancelación, lo que se informa completando la fecha del Campo 35. En virtud de lo anterior, los Códigos 04, 05 y 06 deberán cumplir con los requisitos para que puedan producir los mismos efectos que una sentencia firme y ejecutoriada.
+
+Si no se presentaron acciones judiciales (Códigos 02 y 03 del Campo 30) se debe informar con ceros.
+
+33. RESULTADO SENTENCIA FIRME Y EJECUTORIADA
+Se debe informar el contenido de lo dispuesto en la sentencia firme y ejecutoriada en cuanto a si se acreditó o no la existencia de dolo o culpa grave del usuario. Se incluye en el Código 01, sólo para efectos de este campo, las situaciones en que han existido restituciones o cancelaciones producto de otros equivalentes jurisdiccionales.
+
+Resultado de la sentencia | Código
+No se acreditó existencia de dolo o culpa grave. (Para efectos de este campo, se incluye avenimientos, conciliaciones, desistimientos y abandonos del procedimiento que den lugar a restituciones o cancelaciones) | 01
+Se acredita la participación del usuario en la comisión del delito, que obtuvo provecho ilícito o que actuó con dolo o culpa grave facilitando su comisión. | 02
+Otros | 97
+
+Si no se presentaron acciones judiciales (Códigos 02 y 03 del Campo 30) se deberá informar con ceros.
+
+Si las acciones judiciales están en tramitación (Código 01 del Campo 32) se debe informar con nueves.
+
+En caso que el juicio termine por causales distintas a la sentencia, deberá reportar en "otros" código 97 y si se hubieran verificado restituciones o cancelaciones de cargos, deberá completarlas en los Campos n°26 al 29 cuando correspondiere.
+
+34. FECHA RESTITUCIÓN O CANCELACIÓN POR NO ACREDITAR JUDICIALMENTE LA EXISTENCIA DE DOLO O CULPA GRAVE
+Corresponde informar la fecha (AAAAMMDD) en que se restituyen los fondos o cancelan los cargos impugnados como consecuencia de haberse declarado por sentencia judicial ejecutoriada que no existen antecedentes suficientes para acreditar el dolo o culpa grave del usuario (Código 01 del Campo 33), aun cuando existan saldos por pagar al usuario que se deriven de los reajustes de acuerdo a la Ley N°20.009 y al pago de las costas personales y procesales si correspondiere.
+
+Si se encuentra pendiente la restitución de fondos o cancelación de cargos, se debe informar con nueves, y deberá informarse en el próximo periodo.
+
+Si se informó con el Código 02 en el Campo 33, se informará con ceros
+
+Si el plazo para presentar acciones judiciales está pendiente (Código 02 del Campo 30) o la acción judicial no está terminada (Código 01 y 02 del Campo 32) deberá completarse con nueves.
+
+Si no se presentaron acciones judiciales y el plazo está vencido (Código 03 del Campo 30) o si en la sentencia firme y ejecutoriada se reconoce la acreditación de la existencia del dolo o culpa grave, (Código 02 del Campo 33) se debe informar con ceros.

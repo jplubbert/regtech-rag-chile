@@ -1,0 +1,12 @@
+# Golden set: preguntas de prueba con respuestas/criterios esperados.
+# Formato sugerido por ítem:
+#   - id: q01
+#     pregunta: "¿En qué plazo el banco debe responder un reclamo de fraude bajo Ley 20.009?"
+#     respuesta_esperada: "..."
+#     criterios:
+#       - "menciona artículo X de la ley"
+#       - "menciona plazo de N días hábiles"
+#     metadata_filtro:
+#       documento: "Ley 20.009"
+#
+# Vacío por ahora; se llenará a medida que se redacten casos canónicos.

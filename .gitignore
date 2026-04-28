@@ -1,0 +1,27 @@
+# venv
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+token.json
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
