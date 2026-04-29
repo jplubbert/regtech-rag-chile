@@ -305,6 +305,7 @@ Reproduce: `python scripts/test_retrieval.py`.
 - **UF auto-update via cron**: today the cache is filled lazily on first read or via `actualizar_uf.py --hoy`. A scheduled daily fetch (skipping non-banking days) would make the first-of-month claim reads instant.
 - **Real-time anomaly detection**: the detector runs over a static batch. Wiring it as a Postgres trigger or a stream over LSC writes would surface inconsistencies on the day they appear, not at month close.
 - **E24 sub-chunking by discriminator**: fields like Field 17 (judicial suspension request) change the meaning of fields 26–34. Sub-chunks anchored to discriminator combinations would let the retriever return the *applicable* version of a field's instructions instead of the generic one.
+- * **Human-routing for known blind spots**: golden-set evaluation surfaces query patterns the retriever structurally cannot resolve (e.g. fine-grained distinctions between incisos within the same article). These patterns should route to human review by rule, not be hidden behind a confidence score.
 
 ## License
 
